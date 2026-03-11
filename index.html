@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            VidCom - Welcome
+        </title>
+
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css" />
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <header role="banner" class="header-bar">
+            <div class="header-title">
+            <img src="./img/vidcom.svg" class="header-title">
+                VidCom
+            </div>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-button active">Home</a>
+                <a href="./pages/download.html" class="nav-button">Download</a>
+                <a href="./pages/faq.html" class="nav-button">Q&A</a>
+            </nav>
+        </header>
+
+        <main role="main">
+            <div class="intro">
+                <div>
+                    <h1>
+                        VidCom - Archive and Compress Videos
+                    </h1>
+                    <p>
+                        A simple utility for video archiving and compression. 
+                    </p>
+                    <div class="button-group large">
+                        <a href="./pages/faq.html" class="button">Q&A</a>
+                        <a href="./pages/download.html" class="suggested-button">Download</a>
+                    </div>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="./img/dark/heading.png" media="(prefers-color-scheme: dark)">
+                        <img src="./img/light/heading.png" alt="A program with a card-like video queue on the left size and settings page with radio buttons and value fields on the other. ">
+                    </picture>
+                </div>
+            </div>
+            
+        <section class="card-deck">
+                <div class="card">
+                    <h3>
+                            What is VidCom?
+                        </h3>
+                        <p>
+                            VidCom (short for Video Compression) is a simple utility for compressing video. It offers both GUI and CLI interface and utilises <code>ffmpeg</code> for the video encoding.
+                        </p>
+                </div>
+                <div class="card">
+                    <h3>
+                            How does it work?
+                        </h3>
+                        <p>
+                            There are two modes avaiable; <b>ARCHIVE</b> and <b>COMPRESS</b>. <br>
+                            <b>ARCHIVE</b> compresses your video as much as possible without losing quality. <br>
+                            <b>COMPRESS</b> tries to compress you video to a specified target size. You can optionally decrease the output resolution and frame rate. <br><br>
+                            After pressing the <b>Encode button</b>, VidCom will process all videos in queue and show you the results. You can cancel the encoding process any time. 
+                        </p>
+                        <div class="button-group">
+                            <a href="./pages/faq.html" class="suggested-button pill">Q&A</a>
+                        </div>
+                </div>
+                <div class="card">
+                    <h3>
+                            Where can I get it?
+                        </h3>
+                        <p>
+                            Only Linux is currently supported. 
+                            You can get it on Flathub or on AUR (if you're using Arch Linux). 
+                            Click the button below to see how you can download VidCom. 
+                        </p>
+                        <div class="button-group">
+                            <a href="./pages/download.html" class="suggested-button pill">Download VidCom</a>
+                        </div>
+                </div>
+            </section>
+    
+            <div class="card list">
+                <h3>
+                    Gallery
+                </h3>
+                <div class="gallery" id="gallery">
+                    <a href="#img1">
+                        <picture>
+                            <source srcset="./img/dark/gallery1.png" media="(prefers-color-scheme: dark)">
+                            <img src="./img/light/gallery1.png" alt="Gallery image #1">
+                        </picture>
+                    </a>
+                    <a href="#img2">
+                        <picture>
+                            <source srcset="./img/dark/gallery2.png" media="(prefers-color-scheme: dark)">
+                            <img src="./img/light/gallery2.png" alt="Gallery image #2">
+                        </picture>
+                    </a>
+                    <a href="#img3">
+                        <picture>
+                            <source srcset="./img/dark/gallery3.png" media="(prefers-color-scheme: dark)">
+                            <img src="./img/light/gallery3.png" alt="Gallery image #3">
+                        </picture>
+                    </a>
+                    <a href="#img4">
+                        <picture>
+                            <source srcset="./img/dark/gallery4.png" media="(prefers-color-scheme: dark)">
+                            <img src="./img/light/gallery4.png" alt="Gallery image #4">
+                        </picture>
+                    </a>
+                    <a href="#img5">
+                        <picture>
+                            <source srcset="./img/dark/gallery5.png" media="(prefers-color-scheme: dark)">
+                            <img src="./img/light/gallery5.png" alt="Gallery image #5">
+                        </picture>
+                    </a>
+                    
+                </div>
+            </div>
+    
+            <section class="card-deck">
+
+                <div class="card list">
+    
+                    <ul type="disc">
+                        <h2>
+                            Features
+                        </h2>
+            
+                        <li>
+                            <h4>
+                                GUI
+                            </h4>
+                            <b>Modern and simple user interface</b> built to be clear and intuitive.
+                        </li>
+                        <li>
+                            <h4>
+                                Video Queue
+                            </h4>
+                            A <b>video queue</b> where you can easily add, remove and reorder videos. It's as simple as dragging your videos into the window.
+                        </li>
+                        <li>
+                            <h4>
+                                You're in Control
+                            </h4>
+                            Clear summary of basic settings so you always know what changed and how it changed.
+                        </li>
+                        <li>
+                            <h4>
+                                Stick to the Defaults
+                            </h4>
+                            Default settings for getting things done quickly.
+                        </li>
+                        <li>
+                            <h4>
+                                Easy to Learn
+                            </h4>
+                            Short descriptions of every feature (you don't have to be an expert to use it).
+                        </li>
+                        <li>
+                            <h4>
+                                Intuitive
+                            </h4>
+                            Start or cancel encoding at any moment. Access the resulting videos from a simple list and see if it was succesful or not. 
+                        </li>
+                        <li>
+                            <h4>
+                                Fiddles for Nerds
+                            </h4>
+                            Advanced codec settings for those who like to experiment.
+                        </li>
+                        <li>
+                            <h4>
+                                Ready for Scripting
+                            </h4>
+                            Quick and easy <b>CLI</b> for integration into your own tools. 
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="card list">
+                    <ul type="disc">
+                        <h2>
+                            Technology
+                        </h2>
+                        <li>
+                            <h4>
+                                Language
+                            </h4>
+                            Written in <b>C++</b> for the best performance. 
+                        </li>
+                        <li>
+                            <h4>
+                                GUI
+                            </h4>
+                            GUI built using <b>GTK4</b> library and <b>Adwaita</b> for styling. 
+                        </li>
+                        <li>
+                            <h4>
+                                Encoding
+                            </h4>
+                            Uses <b>ffmpeg</b> for encoding and <b>ffprobe</b> for extracting information. 
+                        </li>
+            
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer role="contentinfo" class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>
+                        Pages
+                    </h4>
+
+                    <a href="index.html">Home</a><br>
+                    <a href="./pages/download.html">Download</a><br>
+                    <a href="./pages/faq.html">Q&A</a><br>
+                </div>
+                <div class="footer-section">
+                    <h4>
+                        Contact
+                    </h4>
+                    <p>
+                        SejaStudio
+                    </p>
+                    <a href="mailto:seja.czstudio@gmail.com">seja.czstudio@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2026 VidCom Project
+                </p>
+            </div>
+        </footer>
+
+        <div id="img1" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+                <picture>
+                    <source srcset="./img/dark/gallery1.png" media="(prefers-color-scheme: dark)">
+                    <img src="./img/light/gallery1.png" alt="Gallery image #1">
+                </picture>
+        </div>
+        <div id="img2" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+                <picture>
+                    <source srcset="./img/dark/gallery2.png" media="(prefers-color-scheme: dark)">
+                    <img src="./img/light/gallery2.png" alt="Gallery image #2">
+                </picture>
+        </div>
+        <div id="img3" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+                <picture>
+                    <source srcset="./img/dark/gallery3.png" media="(prefers-color-scheme: dark)">
+                    <img src="./img/light/gallery3.png" alt="Gallery image #3">
+                </picture>
+        </div>
+        <div id="img4" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+                <picture>
+                    <source srcset="./img/dark/gallery4.png" media="(prefers-color-scheme: dark)">
+                    <img src="./img/light/gallery4.png" alt="Gallery image #4">
+                </picture>
+        </div>
+        <div id="img5" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+                <picture>
+                    <source srcset="./img/dark/gallery5.png" media="(prefers-color-scheme: dark)">
+                    <img src="./img/light/gallery5.png" alt="Gallery image #5">
+                </picture>
+        </div>
+
+    </body>
+</html>

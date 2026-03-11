@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Vidcom - Download
+        </title>
+
+        <link rel="stylesheet" href="../style.css" />
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <header role="banner" class="header-bar">
+            <div class="header-title">
+                <img src="../img/vidcom.svg" class="header-title">
+                VidCom
+            </div>
+            <nav class="header-nav">
+                <a href="../index.html" class="nav-button">Home</a>
+                <a href="./download.html" class="nav-button">Download</a>
+                <a href="./faq.html" class="nav-button active">Q&A</a>
+            </nav>
+        </header>
+
+        <aside role="complementary">
+            <ul type="disc">
+                <h3>
+                    Contents
+                </h3>
+                <li>
+                    <a href="#faq">Q&A</a>
+
+                    <ul type="circle">
+                        <li>
+                            <a href="#q1">How do I download it/install it?</a>
+                        </li>
+                        <li>
+                            <a href="#q2">Can I change the source code? </a>
+                        </li>
+                        <li>
+                            <a href="#q3"> Does this work on Windows? </a>
+                        </li>
+                        <li>
+                            <a href="#q4">Where can I report issues? </a>
+                        </li>
+                        <li>
+                            <a href="#q5">How do I use it?</a>
+                        </li>
+                        <li>
+                            <a href="#q6">What do these modes mean? </a>
+                        </li>
+                        <li>
+                            <a href="#q7">How does the queue work? </a>
+                        </li>
+                        <li>
+                            <a href="#q8">I want to play with advanced settings! Where can I find them? </a>
+                        </li>
+                        <li>
+                            <a href="#q9">It doesn't work for me! What am I doing wrong? </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        
+        <main role="main">
+            <section class="card list footer-section" id="faq">
+                <h2>
+                    Frequently Asked Questions
+                </h2>
+                <ul>
+                    <li id="q1">
+                        <h4>
+                            How do I download it/install it?
+                        </h4>
+                        <p>
+                            See the <a href="./download.html">Download</a> section. The easiest way of installing the app is to go to Flathub. 
+                        </p>
+                    </li>
+                    <li id="q2">
+                        <h4>
+                            Can I change the source code?
+                        </h4>
+                        <p>
+                            Yes. The source code is open source, under GNU GPLv3 licence. Feel free to change it to suit your needs. 
+                            If you have any suggestion of a new feature to add, don't hesitate to contact me. You can either send me a mail or create a pull request on GitHub. 
+                        </p>
+                    </li>
+                    <li id="q3">
+                        <h4>
+                            Does this work on Windows?
+                        </h4>
+                        <p>
+                            VidCom currently doesn't have a Windows build. It is planned, but not a priority. I can run it via WSL without problems. 
+                        </p>
+                    </li>
+                    <li id="q4">
+                        <h4>
+                            Where can I report issues?
+                        </h4>
+                        <p>
+                            You can open up a new issue on GitHub. I will try to respond as soon as possible. 
+                        </p>
+                    </li>
+                    <li id="q5">
+                        <h4>
+                            How do I use it?
+                        </h4>
+                        <p>
+                            Open the app, add your videos to the queue with the button or by dragging them into the queue. Set the mode you want to use and 
+                            maybe other settings if you want, then click the big green button on the top of the window to start encoding. 
+                            After it finishes, it will show you the results and their save locations. 
+                        </p>
+                    </li>
+                    <li id="q6">
+                        <h4>
+                            What do these modes mean?
+                        </h4>
+                        <p>
+                            ARCHIVE mode compresses the video as much as possible without losing quality (depending on your settings if you've changed them). 
+                        </p>
+                        <p>
+                            COMPRESS mode will try to compress the video to the set target size. If the result is cut off, you can easily decrease the output resolution or
+                            FPS and try again. 
+                        </p>
+                    </li>
+                    <li id="q7">
+                        <h4>
+                            How does the queue work?
+                        </h4>
+                        <p>
+                            When you add videos, you can select individual videos and set their setting on the right pane, or you can click "Select All" and edit 
+                            setting for all videos at once. Order of videos in the queue is the order they will be processed in. You can reorder your videos, add the same
+                            video multiple times, delete individual videos or clear the queue. The basic changes are displayed in the information about the video. 
+                        </p>
+                    </li>
+                    <li id="q8">
+                        <h4>
+                            I want to play with advanced settings! Where can I find them? 
+                        </h4>
+                        <p>
+                            At the bottom of the settings page, there are advanced settings specific for chosen codec. They may improve compression and decrease speed, and vice versa. 
+                            You are free to experiment with them. 
+                        </p>
+                    </li>
+                    <li id="q9">
+                        <h4>
+                            It doesn't work for me! What am I doing wrong?
+                        </h4>
+                        <p>
+                            If you installed the app from Flatpak or AUR, then report the issue. If you built it yourself, check whether you have the newest versions of <code>gtk4</code> and <code>ffmpeg</code>. 
+                            If the issue persists, you can report the issue. 
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer role="contentinfo" class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>
+                        Pages
+                    </h4>
+
+                    <a href="../index.html">Home</a><br>
+                    <a href="./download.html">Download</a><br>
+                    <a href="./faq.html">Q&A</a><br>
+                </div>
+                <div class="footer-section">
+                    <h4>
+                        Contact
+                    </h4>
+                    <p>
+                        SejaStudio
+                    </p>
+                    <a href="mailto:seja.czstudio@gmail.com">seja.czstudio@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2026 VidCom Project
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

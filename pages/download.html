@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Vidcom - Download
+        </title>
+
+        <link rel="stylesheet" href="../style.css" />
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <header role="banner" class="header-bar">
+            <div class="header-title">
+                <img src="../img/vidcom.svg" class="header-title">
+                VidCom
+            </div>
+            <nav class="header-nav">
+                <a href="../index.html" class="nav-button">Home</a>
+                <a href="./download.html" class="nav-button active">Download</a>
+                <a href="./faq.html" class="nav-button">Q&A</a>
+            </nav>
+        </header>
+
+        <aside role="complementary">
+            <ul type="disc">
+                <h3>
+                    Contents
+                </h3>
+                <li>
+                    <a href="#download">Download</a>
+
+                    <ul type="circle">
+                        <li>
+                            <a href="#download">Linux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#building">Building</a>
+                    <ul type="circle">
+                        <li>
+                            <a href="#building">Building on Linux</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <main role="main">
+            <section class="card-deck" id="source-code">
+                <div class="card">
+                    <h1>
+                        Download the Source Code
+                    </h1>
+                    <div class="button-group animate-hover">
+                        <a href="https://github.com/seja-arctic-fox/vidcom" class="suggested-button pill large">Go to GitHub</a>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="card-deck" id="download">
+                <div class="card sub">
+                    <h2>
+                        Download on Linux
+                    </h2>
+                    <center>
+                    <p>
+                        Currently, only Linux is officially supported. Windows support may be added in the future. 
+                    </p>
+                    </center>
+
+                    <div class="card-deck">
+                        <div class="card center">
+                            <h3>
+                                Flatpak
+                            </h3>
+                            <p>
+                            You can get VidCom on Flathub
+                            </p>
+                            <a href="https://flathub.org/en/apps/io.github.seja_arctic_fox.vidcom" class="animate-hover">
+                                <img src="../img/flathub.png" alt="Flathub">
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <h3>
+                                Arch User Repository
+                            </h3>
+
+                            <p>
+                                If you're using Arch Linux, the easiest way to install VidCom is from Arch User Repository (AUR) using your favourite helper. <br>
+                                For example with <code>yay</code>:
+                            </p>
+                        <pre><code><div class="syntax-hl">yay</div> -S vidcom</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card list" id="building">
+                <ul>
+                    <h2>
+                        Building
+                    </h2>
+                    <li>
+                        <h4>
+                            Download the source code
+                        </h4>
+                        <p>
+                            First start by downloading the source code by clicking the button above. It has been tested on Linux. You're free to edit the code to work on any other platform you use. 
+                        </p>
+                        <p>
+                            Or you can run: 
+                        </p>
+                        <pre><code><div class="syntax-hl">git</div> clone https://gitlab.fjfi.cvut.cz/sellnmic/vidcom-gui</code></pre>
+                    </li>
+                    <li>
+                        <h4>
+                            After downloading (and extracting)
+                        </h4>
+                        <p>
+                            Go into the root directory of the project and run this command: 
+                        </p>
+                        <pre><code><div class="syntax-hl">meson</div> setup build</code></pre>
+                        <p>
+                            After that, go in the newly created directory <i>"build"</i> and run this command to compile:
+                            <pre><code><div class="syntax-hl">meson</div> compile</code></pre>
+                        </p>
+                        <p>
+                        If you want to compile and install in your system at the same time, you can run:
+                        <pre><code><div class="syntax-hl">meson</div> install</code></pre>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer role="contentinfo" class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>
+                        Pages
+                    </h4>
+
+                    <a href="../index.html">Home</a><br>
+                    <a href="./download.html">Download</a><br>
+                    <a href="./faq.html">Q&A</a><br>
+                </div>
+                <div class="footer-section">
+                    <h4>
+                        Contact
+                    </h4>
+                    <p>
+                        SejaStudio
+                    </p>
+                    <a href="mailto:seja.czstudio@gmail.com">seja.czstudio@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2026 VidCom Project
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
